@@ -1,14 +1,20 @@
 #a {margin-top:0px;}
-img {width:220px; height:250px; margin: 55px 55px}
+img {width:220px; height:250px; margin: 30px 55px}
+p{
+text-align: center;
+}
+p{
 
+text-align:left;
+}
 h2, p{
            font-family: Comic Sans MS;
        }
 
  body{
-            margin:0px;
-			background-image: url('phu-si1.jpg');
-			}
+     margin:0px;
+	 background-image: url('phu-si1.jpg');
+	}
 #container{
 	width:800px;
 	border:1px solid gray;
@@ -17,8 +23,8 @@ h2, p{
 	background-color:white;
 }
 #header{
-	background-color:violet;
-	color:white;
+	background-color:#FFE4C4;
+	color:black;
 	margin-top:0px;
 	border:1px solid;
 
@@ -38,10 +44,22 @@ float:right;
 width:400px;
 
 }
-#con{
+
+#back{
+float:right;
+padding-right:100px;
+padding-bottom:25px;
+}
+h3:hover{
+	color:#32CD32;
+}
+.sub-menu{
 float:left;
-width:400px;
-padding-top:0px;
+padding:12px;
+}
+.sub-menu a{
+text-decoration: none;
+color:violet;
 }
 
 
