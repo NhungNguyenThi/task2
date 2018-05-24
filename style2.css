@@ -1,0 +1,47 @@
+#a {margin-top:0px;}
+img {width:220px; height:250px; margin: 55px 55px}
+
+h2, p{
+           font-family: Comic Sans MS;
+       }
+
+ body{
+            margin:0px;
+			background-image: url('phu-si1.jpg');
+			}
+#container{
+	width:800px;
+	border:1px solid gray;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+}
+#header{
+	background-color:violet;
+	color:white;
+	margin-top:0px;
+	border:1px solid;
+
+}
+#content{
+	margin:15px;
+	float:none;
+}
+#footer{
+	background-color:#ddd;
+	font-size:15px;
+	text-align:center;
+	padding:15px;
+}
+#pic{
+float:right;
+width:400px;
+
+}
+#con{
+float:left;
+width:400px;
+padding-top:0px;
+}
+
+
