@@ -4,12 +4,11 @@ p{
 text-align: center;
 }
 p{
-
 text-align:left;
 }
 h2, p{
-           font-family: Comic Sans MS;
-       }
+      font-family: Comic Sans MS;
+     }
 
  body{
      margin:0px;
@@ -27,7 +26,6 @@ h2, p{
 	color:black;
 	margin-top:0px;
 	border:1px solid;
-
 }
 #content{
 	margin:15px;
@@ -42,9 +40,7 @@ h2, p{
 #pic{
 float:right;
 width:400px;
-
 }
-
 #back{
 float:right;
 padding-right:100px;
