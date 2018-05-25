@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
     <meta charset="utf8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>
     Build a Personal Portfolio Webpage    
 </title>	
@@ -15,16 +17,17 @@
 <body>
     <div id="container">
 		<div id="menu">
-			<div class="sub-menu"><a href="#education">EDUCATION</a></div>
-			<div class="sub-menu"><a href="#certifications">CERTIFICATIONS</a></div>
-			<div class="sub-menu"><a href="#activities">ACTIVITIES</a></div>
-			<div class="sub-menu"><a href="#programming">PROGRAMMING</a></div>
-			<div class="sub-menu"><a href="#interests">INTERESTS</a></div>
-			<div class="sub-menu"><a href="#language">LANGUAGE</a></div>
-			<div class="sub-menu"><a href="#myproject">MY PROJECT</a></div>
+			<ul>
+				<li><a id="certification" href="#">CERTIFICATIONS</a></li>
+				<li><a id="activities"href="#">ACTIVITIES</a></li>
+				<li><a id="progamming" href="#">PROGRAMMING</a></li>
+				<li><a id="interests"href="#">INTERESTS</a></li>
+				<li><a id="language"href="#">LANGUAGE</a></li>
+				<li><a id="project" href="#">PROJECT</a></li>
+			</ul>
 		</div>
         <div id="header">
-            <div align="right" id="pic"><img src="nhung.jpg"></div>
+            <div align="right" id="pic"><img class="imgZoom" src="nhung.jpg"></div>
             <div class="title" id="content"> 
                 <h2>NGUYEN THI NHUNG</h2>
                 <h2>Maxim: Life is a story</h2>
@@ -36,14 +39,18 @@
                     <p>4. Phone: 0979744591</p>
                     <p>5. Gmail: <a href="https://mail.google.com/">nhungnguyenthi0196@gmail.com</a></p>
                 </span>
-                </span>
+                <a href="http://facebook.com/ntnhung196" class="fa fa-facebook"></a>
+				<a href="https://www.youtube.com/?gl=VN" class="fa fa-youtube"></a>
+				<a href="https://www.google.com.vn/?hl=vi&gws_rd=ssl" class="fa fa-google"></a>
+				<a href="https://twitter.com/i/flow/signup?lang=vi" class="fa fa-twitter"></a>
+				<a href="https://www.google.com/search?q=skype&ie=utf-8&oe=utf-8&client=firefox-b-ab" class="fa fa-skype"></a>
+				<a href="https://vn.yahoo.com/" class="fa fa-yahoo"></a>
             </div>    
         </div>
         <div id="content">
             <tr>
             <td>
                 <span style="color: red">
-				<a name="education"></a>
                 <h3>EDUCATION</h3></span>
                     <ul type="square">
                         <li>Aug 2014 - December 2018</li>
@@ -51,7 +58,6 @@
 						<div id="schoolname">Can Tho University</div>
 						<input type="text" id="txt" name="txt" onclick="this.value = '' "/>
 						<button onclick="getAndSetVal();">Update</button>
-						
                         <li>Major: Data Communication and Computer Networks</li>
                         <li>GPA: 2.75/4</li>
                         <a href="https://ctu.edu.vn/" title= "Read" target="_blank"><button type="button">Read More</button></a>
@@ -67,7 +73,7 @@
                         <a href="https://yu.ctu.edu.vn/" title= "Read" target="_blank"><button type="button">Read More</button></a>
                     </ul>
                 <div style="border: 1px solid black;"></div>
-				<a name="activities"></a>
+				
                 <span style="color: red"><h3>ACTIVITIES</h3></span>
                     <ul type="square">
                         <li><mark>2016-2018</mark>: Secretary of Data Communication and Computer Networks - Course 40</li>
@@ -76,7 +82,6 @@
                         <a href="https://yu.ctu.edu.vn/hoat-dong-hoi/19-sinh-vien-5-tot/1341-tcxc-danh-hieu-sv-5-tot-cap-truong-nh-2017-2018.html" title= "Read" target="_blank"><button type="button">Read More</button></a>
                     </ul>
                 <div style="border: 1px solid black;"></div>
-				<a name="programming"></a>
                 <span style="color: red"><h3>PROGRAMMING</h3></span>
                     <ul type="square">
                         <li>Java</li>
@@ -86,7 +91,6 @@
                         <a href="http://vietjack.com/java/" title= "Read" target="_blank"><button type="button">Read More</button></a>
                     </ul>
                 <div style="border: 1px solid black;"></div>  
-				<a name="interests"></a>
                 <span style="color: red"><h3>INTERESTS</h3></span>
                     <ol>
                         <strong><li>Reading book</li></strong>
@@ -110,7 +114,6 @@
                         </ul>
                     </ol>
                 <div style="border: 1px solid black;"></div>
-				<a name="language"></a>
                 <span style="color: red"><h3>LANGUAGE</h3></span>
                     <ol>
                         <strong><li>Eglish</li></strong>
@@ -129,19 +132,19 @@
                     </ol>
                     <div style="border: 1px solid black;"></div>
 					<div class="container">
-					<a name="myproject"></a>
 						<p style="text-align:center;"><strong><font size="70"><font color="#008080">MY PROJECT</font></strong></p>
-						<a href="http://xuatkhaulaodong.com.vn/hoa-anh-dao-nhat-ban-no-vao-mua-nao-1426.htm" target="_blank"><img src="sakura.jpg" alt="Lights" style="width:160px; height=10px"></a>
-						<a href="http://infonet.vn/ha-noi-sap-trung-bay-200-cay-hoa-anh-dao-post193683.info" target="_blank"><img src="sakura2.jpg" alt="Lights" style="width:160px; height=10px; margin: 0px 10px"></a>
-						<a href="http://tourdulichnhatban.info/tour-nhat-ban-thuong-thuc-hoa-anh-dao-tu-ha-noi-pt.html" target="_blank"><img src="sakura3.jpg" alt="Lights" style="width:160px; height=10px; margin: -50px 50px"></a>
+						<div id="overlay" onmousemove="zoomIn()"></div>
+						<a href="http://xuatkhaulaodong.com.vn/hoa-anh-dao-nhat-ban-no-vao-mua-nao-1426.htm" target="_blank"><img class="imgZoom" src="sakura.jpg" alt="Lights" style="width:160px; height=10px"></a>
+						<a href="http://infonet.vn/ha-noi-sap-trung-bay-200-cay-hoa-anh-dao-post193683.info" target="_blank"><img class="imgZoom" src="sakura2.jpg" alt="Lights" style="width:160px; height=10px; margin: 0px 10px"></a>
+						<a href="http://tourdulichnhatban.info/tour-nhat-ban-thuong-thuc-hoa-anh-dao-tu-ha-noi-pt.html" target="_blank"><img class="imgZoom" src="sakura3.jpg" alt="Lights" style="width:160px; height=10px; margin: -50px 50px"></a>
 						<br>
-						<a href="http://duhoc.japan.net.vn/tong-hop-5-phan-mem-hoc-tieng-nhat-mina-no-nihongo-tot-nhat-cho-android-707.htm" target="_blank"><img src="penkio5.jpg" alt="Lights" style="width:160px; height=15px"></a>
-						<a href="http://laodongxuatkhaunhatban.vn/cac-trang-web-hoc-tieng-nhat-online-tot-nhat.html" target="_blank"><img src="penkio1.jpg"  alt="Lights" style="width:160px; height=15px; margin; margin: 0px 10px"></a>
-						<a href="https://senquocte.com/cac-lop-day-tieng-nhat-mien-phi-cho-nguoi-viet-nam-tai-nhat-ban/" target="_blank"><img src="penkio2.jpg"alt="Lights" style="width:160px; height=15px; margin: -50px 50px"></a>
+						<a href="http://duhoc.japan.net.vn/tong-hop-5-phan-mem-hoc-tieng-nhat-mina-no-nihongo-tot-nhat-cho-android-707.htm" target="_blank"><img class="imgZoom" src="penkio5.jpg" alt="Lights" style="width:160px; height=15px"></a>
+						<a href="http://laodongxuatkhaunhatban.vn/cac-trang-web-hoc-tieng-nhat-online-tot-nhat.html" target="_blank"><img  class="imgZoom" src="penkio1.jpg"  alt="Lights" style="width:160px; height=15px; margin; margin: 0px 10px"></a>
+						<a href="https://senquocte.com/cac-lop-day-tieng-nhat-mien-phi-cho-nguoi-viet-nam-tai-nhat-ban/" target="_blank"><img class="imgZoom" src="penkio2.jpg"alt="Lights" style="width:160px; height=15px; margin: -50px 50px"></a>
 						<br>
-						<a href="http://www.mongon.net/tag/mon-an-nhat-ban/" target="_blank"><img src="sushi.jpg" alt="Lights" style="width:160px; height=10px></a>
-						<a href="http://vietq.vn/vi-sao-mon-an-nhat-pho-bien-khap-the-gioi-d23948.html" target="_blank"><img src="sushi2.jpg" alt="Lights" style="width:160px; height=10px; margin: 0px 10px"></a>
-						<a href="http://tintuconline.com.vn/an--choi/8-mon-an-la-it-nguoi-biet-cua-nhat-ban-n-275045.html" target="_blank"><img src="sushi4.jpg" alt="Lights" style="width:160px; height=10px; margin: -50px 50px"></a>
+						<a href="http://www.mongon.net/tag/mon-an-nhat-ban/" target="_blank"><img class="imgZoom" src="sushi.jpg" alt="Lights" style="width:160px; height=10px></a>
+						<a href="http://vietq.vn/vi-sao-mon-an-nhat-pho-bien-khap-the-gioi-d23948.html" target="_blank"><img class="imgZoom" src="sushi2.jpg" alt="Lights" style="width:160px; height=10px; margin: 0px 20px"></a>
+						<a href="http://tintuconline.com.vn/an--choi/8-mon-an-la-it-nguoi-biet-cua-nhat-ban-n-275045.html" target="_blank"><img  class="imgZoom"src="sushi4.jpg" alt="Lights" style="width:160px; height=10px; margin: -50px 50px"></a>
 						<br>
 					</div>	
 			</td>
@@ -149,44 +152,7 @@
         </div>
         <div id="footer">Facebook: https://facebook.com/ntnhung196</div>
     </div>
-			<script>
-			$(document).ready(function(){
-				//hide #back-top first
-				$("#back-top").hide();
-				//fade in #back-top
-				$(function () {
-					$(window).scroll(function () {
-						if ($(this).scrollTop() > 100) {
-							$('#back-top').fadeIn();
-						} else {
-							$('#back-top').fadeOut();
-						}
-					});
-					//scroll body to 0px on click
-					$('#back-top a').click(function () {
-						$('body,html').animate({
-							scrollTop: 0
-						}, 800);
-						return false;
-					});
-				});
-			});
-		</script>
-        <script>
-            function getAndSetVal()
-            {
-                var txt1 = document.getElementById('txt').value;
-				document.getElementById("schoolname").innerHTML = txt1;
-            }
-            //get value
-            function getVal()
-            {
-             var txt = document.getElementById('txt').value;
-             alert(txt);
-            }  
-        </script>
-			<p id="back-top">
-				<div align="right" id="back"><a href="#top"><button style="background-color:white;"type="button"><p style="font-size:20px; color:black;">Homeback</p></button></a></div>
-			</p>
+	<script src="script1.js"></script>
+	<div align="right" class="lentop"><button style="background-color:white; font-size:20px; color:black;"type="button">Homeback</button></div>
 </body>
 </html>

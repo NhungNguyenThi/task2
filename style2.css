@@ -1,17 +1,17 @@
 #a {margin-top:0px;}
 img {width:220px; height:250px; margin: 30px 55px}
 p{
-text-align: center;
+	text-align: center;
 }
 p{
-text-align:left;
+	text-align:left;
 }
 h2, p{
       font-family: Comic Sans MS;
      }
 
  body{
-     margin:0px;
+	 margin:0px;
 	 background-image: url('phu-si1.jpg');
 	}
 #container{
@@ -38,24 +38,99 @@ h2, p{
 	padding:15px;
 }
 #pic{
-float:right;
-width:400px;
+	float:right;
+	width:400px;
 }
-#back{
-float:right;
-padding-right:100px;
-padding-bottom:25px;
+.lentop {
+	display:none;
+	bottom: 1%;
+	right: 420px; 
+	cursor: pointer;  
+	position: fixed; 
+	z-index: 1000;
+ }
+.lentop div {
+	background:crimson; 
+	border:2px solid #fff; 
+	border-radius:45px; 
+	padding:11px 12.5px; 
+	box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3)
 }
 h3:hover{
 	color:#32CD32;
 }
-.sub-menu{
-float:left;
-padding:12px;
+*{
+	margin:0;
+	padding:0;
 }
-.sub-menu a{
-text-decoration: none;
-color:violet;
+body{
+	font-family: sans-serif;
+	color: #333;
 }
+#menu ul{
+	background:green;
+	list-style-type: none;
+	text-align: center;
+}
+#menu > ul  > li{
+	color: #f1f1f1;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+#menu > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+#menu > ul > li > a:hover{
+	background: white;
+	color: #333;
+}
+.imgZoom:hover{
+	transform: scale(1.1);
+}
+.fa{
+	padding:20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+.fa{
+	opacity: 0.7;
+}
+.fa-facebook{
+	background:#3333FF;
+	color: white;
+}
+.fa-youtube{
+	background:#bb0000;
+	color: white;
+}
+.fa-google{
+	background:#dd4b39;
+	color: white;
+}
+.fa-twitter{
+	background: #55ACEE;
+	color: white;	
+}
+.fa-skype{
+	background: #00aff0;
+	color: white;
+}
+.fa-yahoo{
+	background: #430297;
+	color: white;
+}
+
+
+
+
 
 
