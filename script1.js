@@ -7,70 +7,6 @@
 				$("body,html").animate({scrollTop: 0}, "slow");
 				});
 			}); 
-			
-			
-		
-			document.getElementById("menu").addEventListener("click", function(){
-			$('html,body').animate({scrollTop:$("#certification").position().top});
-				});
-
-
-
-			$(document).ready(function(){
-				$(function () {
-					$('#activities').click(function () {
-						$('body,html').animate({
-							scrollTop: 800
-						}, 800);
-						return false;
-					});
-				});
-			});
-		
-			$(document).ready(function(){
-				$(function () {
-					$('#progamming').click(function () {
-						$('body,html').animate({
-							scrollTop: 1000
-						}, 800);
-						return false;
-					});
-				});
-			});
-		
-			$(document).ready(function(){
-				$(function () {
-					$('#interests').click(function () {
-						$('body,html').animate({
-							scrollTop: 1100
-						}, 800);
-						return false;
-					});
-				});
-			});
-		
-			$(document).ready(function(){
-				$(function () {
-					$('#language').click(function () {
-						$('body,html').animate({
-							scrollTop: 1450
-						}, 800);
-						return false;
-					});
-				});
-			});
-		
-			$(document).ready(function(){
-				$(function () {
-					$('#project').click(function () {
-						$('body,html').animate({
-							scrollTop: 1700
-						}, 800);
-						return false;
-					});
-				});
-			});
-		
 		
             function getAndSetVal()
             {
@@ -82,4 +18,38 @@
              var txt = document.getElementById('txt').value;
              alert(txt);
             }  
-       
+
+			function hello(){
+				alert("hello");
+			}
+			
+			document.getElementById('cer').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#certifications").position().top});
+			});
+			
+			document.getElementById('act').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#activities").position().top});
+			});
+			
+			document.getElementById('pro').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#program").position().top});
+			});
+			
+			document.getElementById('int').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#interests").position().top});
+			});
+			
+			document.getElementById('lan').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#language").position().top});
+			});
+			
+			document.getElementById('proj').addEventListener("click", function(){
+				$('html,body').animate({scrollTop:$("#project").position().top});
+			});
+
+			
+
+
+
+   
+    
